@@ -9,6 +9,11 @@ $(function () {
     $(".header-effect").removeClass("active");
   });
 
+  $(window).scroll(function () {
+    let offset = $(window).scrollTop();
+    $(".header-nav").toggleClass("fixed", offset > 100);
+  });
+
   var swiper = new Swiper(".headerSwiper", {
     loop: true,
     navigation: {
