@@ -126,6 +126,19 @@
   position: relative;
 }
 
+.header-nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 36px 15px 17px;
+}
+
 .header-effect {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -209,8 +222,8 @@
 .philosoph-header .header__person {
   -o-object-fit: contain;
   object-fit: contain;
-  height: auto;
   display: block;
+  height: auto;
 }
 
 .philosoph-header .swiper-slide__text {
@@ -272,16 +285,17 @@
 }
 
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 36px 0 17px 0;
+  transition: .5s;
+}
+
+.header-nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 6px -5px 23px #000000;
 }
 
 .header-nav__left {
@@ -1620,6 +1634,7 @@ section.contacts #map {
   .header-effect {
     padding: 70px 0 50px 0;
   }
+
   .about-title__block {
     border-bottom: 1px solid #000000;
   }
