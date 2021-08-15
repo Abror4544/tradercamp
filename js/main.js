@@ -11,7 +11,6 @@ $(function () {
 
   var swiper = new Swiper(".headerSwiper", {
     loop: true,
-    effect: "coverflow",
     navigation: {
       nextEl: ".header-button-next",
       prevEl: ".header-button-prev",
