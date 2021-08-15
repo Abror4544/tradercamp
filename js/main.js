@@ -70,6 +70,20 @@ $(function () {
   })
 
 
+  let nameOfCourse = document.querySelectorAll(".course__item__title");
+  let btn = document.querySelectorAll(".course__item__link");
+  let formTitle = document.querySelector(".courseForm .title");
+
+
+  for(let i = 0; i < btn.length; i++){
+    btn[i].addEventListener("click", function(){
+      formTitle.innerHTML = '';
+      formTitle.innerHTML = `курс ${nameOfCourse[i].innerText}`;
+      $(".course_name").val(nameOfCourse[i].innerText);
+    })
+  }
+
+
   /* ************** calculator select ******************* */
   $("select").each(function () {
     var $this = $(this),
