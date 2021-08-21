@@ -9,27 +9,16 @@ $(function () {
     $(".header-effect").removeClass("active");
   });
 
+  let menuHeight = $(".header-nav").outerHeight();
   $(window).scroll(function () {
     let offset = $(window).scrollTop();
     $(".header-nav").toggleClass("fixed", offset > 100);
+    offset > 100
+      ? $(".header-content").css("padding-top", menuHeight)
+      : $(".header-content").css("padding-top", "0");
   });
 
-  var swiper = new Swiper(".headerSwiper", {
-    loop: true,
-    navigation: {
-      nextEl: ".header-button-next",
-      prevEl: ".header-button-prev",
-    },
-    pagination: {
-      el: ".header-pagination",
-      type: "fraction",
-    },
-    autoplay: {
-      delay: 10000,
-    },
-  });
-
-  var swiper2 = new Swiper(".teamSwiper", {
+  var swiper = new Swiper(".teamSwiper", {
     spaceBetween: 60,
     navigation: {
       nextEl: ".team-button-next",
@@ -65,28 +54,24 @@ $(function () {
     $("html, body").animate({ scrollTop: target.offset().top - 70 }, 500);
   });
 
-
-  $(".close_thanks").click(function(){    
+  $(".close_thanks").click(function () {
     $.fancybox.close({
       href: "javascript:;",
       src: "#thanks",
     });
-  })
-
+  });
 
   let nameOfCourse = document.querySelectorAll(".course__item__title");
   let btn = document.querySelectorAll(".course__item__link");
   let formTitle = document.querySelector(".courseForm .title");
 
-
-  for(let i = 0; i < btn.length; i++){
-    btn[i].addEventListener("click", function(){
-      formTitle.innerHTML = '';
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener("click", function () {
+      formTitle.innerHTML = "";
       formTitle.innerHTML = `курс ${nameOfCourse[i].innerText}`;
       $(".course_name").val(nameOfCourse[i].innerText);
-    })
+    });
   }
-
 
   /* ************** calculator select ******************* */
   $("select").each(function () {
