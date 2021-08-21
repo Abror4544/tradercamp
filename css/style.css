@@ -143,7 +143,7 @@
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 167px 0 55px 0;
+  padding: 167px 0;
   position: relative;
 }
 
@@ -199,48 +199,6 @@
 .header .header-content__button:hover {
   background: #29aae9;
   border: 2px solid #29aae9;
-}
-
-.header .header-content__slider-control__panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 120px;
-}
-
-.philosoph-header .header-effect {
-  padding: 167px 0 0 0;
-}
-
-.philosoph-header .swiper-slide__title {
-  width: 300px;
-}
-
-.philosoph-header .header__person {
-  -o-object-fit: contain;
-  object-fit: contain;
-  display: block;
-  height: auto;
-}
-
-.philosoph-header .swiper-slide__text {
-  width: 440px;
-}
-
-.philosoph-header .header-content {
-  background: #48b3e8;
-}
-
-.philosoph-header .header-content .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .slide__btn {
@@ -1486,11 +1444,7 @@ section.contacts #map {
 
 @media screen and (max-width: 1199px) {
   .header-effect {
-    padding: 100px 0 55px 0;
-  }
-
-  .philosoph-header .header__person {
-    height: 588px;
+    padding: 100px 0;
   }
 
   .header .swiper-slide__text {
@@ -1499,10 +1453,6 @@ section.contacts #map {
 
   .header .header-content__slider-control__panel {
     margin-top: 50px;
-  }
-
-  .philosoph-header .header-effect {
-    padding: 100px 0 0 0;
   }
 
   .header-nav__right .tel {
@@ -1632,7 +1582,7 @@ section.contacts #map {
 
 @media screen and (max-width: 767px) {
   .header-effect {
-    padding: 70px 0 50px 0;
+    padding: 70px 0;
   }
 
   .about-title__block {
@@ -1646,10 +1596,6 @@ section.contacts #map {
   .about,
   .philosoph-effect {
     background: #ffffff;
-  }
-
-  .philosoph-header .header__person {
-    display: none;
   }
 
   .header .swiper-slide__title {
@@ -2003,51 +1949,12 @@ section.contacts #map {
     padding: 0;
   }
 
-  .philosoph-header .header-effect {
-    padding: 70px 20px 105px;
-  }
 
   .modalForm,
   .thanks_window,
   .courseForm,
   .questionForm {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 549px) {
-  .philosoph-header .header-effect {
-    padding: 70px 20px 88px;
-  }
-}
-
-@media screen and (max-width: 468px) {
-  .philosoph-header .header-effect {
-    padding: 70px 20px 116px;
-  }
-}
-
-@media screen and (max-width: 399px) {
-  .philosoph-header .header-effect {
-    padding: 70px 20px 89px;
-  }
-}
-
-@media screen and (max-width: 378px) {
-  .philosoph-header .header-effect {
-    padding: 70px 20px 104px;
-  }
-}
-
-@media screen and (max-width: 354px) {
-  .philosoph-header .header-effect {
-    padding: 70px 20px 116px;
-  }
-}
-
-@media screen and (max-width: 332px) {
-  .philosoph-header .header-effect {
-    padding: 70px 20px 137px;
   }
 }
 
@@ -2064,11 +1971,5 @@ section.contacts #map {
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 325px) {
-  .philosoph-header .header__person {
-    height: auto;
   }
 }
